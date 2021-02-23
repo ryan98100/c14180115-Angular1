@@ -22,14 +22,14 @@ export class AppComponent  {
   click() {
     if(this.game!=true){
       if (this.giliran) {
-        if (this.board[this.X][this.Y] == "") {
+        if (this.board[this.X][this.Y] == "*") {
           this.board[this.X][this.Y] = "0";
           this.giliran = false;
         } else {
           alert("Sudah diisi musuh!");
         }
       } else {
-        if (this.board[this.X][this.Y] == "") {
+        if (this.board[this.X][this.Y] == "*") {
           this.board[this.X][this.Y] = "1";
           this.giliran = true;
         } else {

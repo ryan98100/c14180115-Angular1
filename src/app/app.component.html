@@ -1,2 +1,21 @@
 <hello name="{{ name }}"></hello>
-
+	<ng-template *ngIf="giliran;then A;else B"> </ng-template>
+	<ng-template #A>
+		<p> WEH Player1 </p>
+	</ng-template>
+	<ng-template #B>
+		<p> WEH Player2 </p>
+	</ng-template>
+<br/>
+<div *ngFor="let Kol of board">
+  <span *ngFor="let baris of Kol">
+    {{baris}}
+  </span>
+</div>
+<div>
+  Koordinat X= <input [(ngModel)]="Y" type="text"/>
+  <Br/>
+  Koordinat Y= <input [(ngModel)]="X" type="text"/>
+  <Br/>
+  <button (click)="click()">Confirm</button>
+</div>
