@@ -7,4 +7,15 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  giliran: boolean = true;
+  game: boolean = false;
+  X = 0;
+  Y =0;
+  board = [
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+  ];
 }
